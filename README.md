@@ -32,9 +32,18 @@ Measure and compare assertion quality across treatments using:
 
 ## Requirements
 
-The project requires the kanboard application to be running.
+The project requires the Kanboard application to be running.
+
 Use the following command to start the application:
 
 ```bash
 docker run -d --name kanboard -p 8080:80 -t kanboard/kanboard:v1.2.15
 ```
+
+You can also run Selenium Grid (optional but recommended) to execute tests with the remote browser setup:
+
+```bash
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" --name=browser selenium/standalone-chrome:127.0-chromedriver-127.0
+```
+
+When using the remote browser container, set the test app URL to `http://host.docker.internal:8080`.
