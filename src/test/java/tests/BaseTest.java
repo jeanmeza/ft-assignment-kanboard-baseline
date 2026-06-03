@@ -17,7 +17,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class BaseTest {
 
 	public static final String password = "admin";
-    public static final String app_url = "http://192.168.1.141:8080";
+    public static final String app_url = "http://host.docker.internal:8080";
 	public WebDriver driver;
 
 	@Before
