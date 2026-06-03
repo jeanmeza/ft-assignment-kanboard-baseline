@@ -21,7 +21,7 @@ for /L %%i in (1,1,%n%) do (
     timeout /t 10 /nobreak >nul
 
     echo Esecuzione test con Maven...
-    mvn -Dtest=TestSuite test
+    .\mvnw.cmd -Dtest=TestSuite test
 
     echo Salvataggio risultati...
     mkdir "..\..\..\..\..\..\ASE SI flakiness\executions\7\kanboard\conf7\%%i"
