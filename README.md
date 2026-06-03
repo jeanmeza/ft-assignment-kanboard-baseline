@@ -29,3 +29,12 @@ Measure and compare assertion quality across treatments using:
 - `exp/no-comments`
 - `exp/with-comments`
 - `exp/with-comments-html`
+
+## Requirements
+
+The project requires the kanboard application to be running.
+Use the following command to start the application:
+
+```bash
+docker run -d --name kanboard -p 8080:80 -t kanboard/kanboard:v1.2.15
+```
