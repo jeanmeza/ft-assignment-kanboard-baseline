@@ -1,5 +1,6 @@
 param(
-    [switch]$RunTests
+    [switch]$RunTests,
+    [string]$Test="tests.TestSuite"
 )
 
 docker stop kanboard
@@ -13,5 +14,5 @@ if ($RunTests)
         Start-Sleep -Seconds 2
     } until ((Invoke-WebRequest -Uri "http://localhost:8080" -UseBasicParsing -ErrorAction SilentlyContinue).StatusCode -eq 200)
 
-    .\mvnw clean test -Dtest=TestSuite
+    .\mvnw clean test "-Dtest=$Test"
 }
