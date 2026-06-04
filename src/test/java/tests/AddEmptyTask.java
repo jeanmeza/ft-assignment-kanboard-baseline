@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectManagementPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddEmptyTask extends BaseTest {
@@ -17,8 +18,7 @@ public class AddEmptyTask extends BaseTest {
 			.newTask()
 			.setNewTaskName("")
 			.saveNewTask();
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("Task title is required", project.getErrorMessage());
 	}
 
 
