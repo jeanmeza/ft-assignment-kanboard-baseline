@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectSummaryPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class AddNewProject extends BaseTest {
@@ -16,9 +18,8 @@ public class AddNewProject extends BaseTest {
 			.newProject()
 			.addNewProject("Test 2");
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("Test 2", project.getTitle());
+		assertTrue(project.getTitle().contains("Test 2"));
 
 	}
 
