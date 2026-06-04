@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.AddNewProjectPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 public class AddEmptyProject extends BaseTest {
@@ -15,8 +16,7 @@ public class AddEmptyProject extends BaseTest {
 			.newProject()
 			.addEmptyProject();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertFalse(newProjPage.getErrorMessage().isEmpty());
 
 	}
 }
