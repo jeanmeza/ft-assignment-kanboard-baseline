@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.UserSummaryPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddRemoteUser extends BaseTest {
@@ -22,10 +21,10 @@ public class AddRemoteUser extends BaseTest {
 			.setRemote()
 			.save();
 
-		assertEquals(user.getUsername(), "TestRemote");
-		assertEquals(user.getFullname(), "remote1");
-		assertEquals(user.getEmail(), "remote@gmail.com");
-		assertEquals(user.getAccountType(), "Remote");
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 	}
 
 

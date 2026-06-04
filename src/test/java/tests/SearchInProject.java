@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.SearchResultsPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SearchInProject extends BaseTest {
 
@@ -14,7 +13,7 @@ public class SearchInProject extends BaseTest {
 			.loginToKanboard("admin", password)
 			.search("status:open");
 
-		assertEquals("task 3", results.getFirstTask());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

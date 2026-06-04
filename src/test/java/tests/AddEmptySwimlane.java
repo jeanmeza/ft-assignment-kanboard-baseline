@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.SwimlanesPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddEmptySwimlane extends BaseTest {
@@ -19,7 +18,7 @@ public class AddEmptySwimlane extends BaseTest {
 			.addSwimlane()
 			.save();
 
-		assertEquals("The name is required", swimlanes.getErrorMessage());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectSummaryPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class EditProject extends BaseTest {
@@ -20,7 +19,7 @@ public class EditProject extends BaseTest {
 			.save()
 			.summary();
 
-		assertEquals("This is the new description", project.getDescription());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 
 	}

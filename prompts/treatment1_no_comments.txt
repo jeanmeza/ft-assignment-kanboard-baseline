@@ -1,0 +1,14 @@
+You are given a Selenium WebDriver JUnit 5 test in Java. The original assertions have been removed and replaced with the following placeholder comment:
+
+// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+
+Your task:
+- Replace each placeholder comment with exactly one JUnit 5 assertion.
+- Use only org.junit.jupiter.api.Assertions methods (assertEquals, assertTrue, assertFalse, etc.).
+- Add the required import statements.
+- Do not modify any other part of the test.
+- Do not add explanations or comments.
+- The assertion must be executable and consistent with the purpose of the test.
+- Return the complete modified Java file and nothing else.
+
+[TEST CODE HERE]

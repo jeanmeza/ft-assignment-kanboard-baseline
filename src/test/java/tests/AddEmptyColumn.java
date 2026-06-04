@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.ColumnsPage;
 import po.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddEmptyColumn extends BaseTest {
 
@@ -17,7 +16,7 @@ public class AddEmptyColumn extends BaseTest {
 			.addColumn()
 			.save();
 
-		assertEquals("The title is required", columns.getErrorMessage());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 }

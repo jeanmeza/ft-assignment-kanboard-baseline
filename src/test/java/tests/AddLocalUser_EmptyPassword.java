@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.NewUserPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddLocalUser_EmptyPassword extends BaseTest {
 
@@ -19,7 +18,7 @@ public class AddLocalUser_EmptyPassword extends BaseTest {
 			.setEmail("user2@gmail.com")
 			.saveError();
 
-		assertEquals("The password is required", user.getPswError());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

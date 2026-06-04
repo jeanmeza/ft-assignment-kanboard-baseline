@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import po.CategoriesPage;
 import po.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddEmptyCategory extends BaseTest {
 
@@ -18,7 +17,7 @@ public class AddEmptyCategory extends BaseTest {
 			.addCategory()
 			.save();
 
-		assertEquals("The name is required", categories.getErrorMessage());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 
 	}

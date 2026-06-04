@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.UserSummaryPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class EditProfile extends BaseTest {
@@ -21,7 +20,7 @@ public class EditProfile extends BaseTest {
 			.setEmail("admin@kanboard.com")
 			.save();
 
-		assertEquals("admin@kanboard.com", user.getEmail());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

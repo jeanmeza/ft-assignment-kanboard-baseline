@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.CurrencyRatesPage;
 import po.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddNewCurrencyRate extends BaseTest {
@@ -20,8 +19,8 @@ public class AddNewCurrencyRate extends BaseTest {
 			.setRate("1.2")
 			.save();
 
-		assertEquals("USD", currencies.getRateCurrency());
-		assertEquals("1.20", currencies.getRateValue());
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 	}
 
 }
