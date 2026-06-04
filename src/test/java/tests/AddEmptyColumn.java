@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.ColumnsPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class AddEmptyColumn extends BaseTest {
 
@@ -16,7 +18,6 @@ public class AddEmptyColumn extends BaseTest {
 			.addColumn()
 			.save();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertTrue(columns.getLastColumnName().isEmpty());
 	}
 }
