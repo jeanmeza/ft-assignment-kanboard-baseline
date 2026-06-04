@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectManagementPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddNewTask extends BaseTest {
@@ -17,8 +18,7 @@ public class AddNewTask extends BaseTest {
 			.newTask()
 			.setNewTaskName("task 3")
 			.saveNewTask();
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("task 3", project.getFirstTaskName());
 	}
 
 
