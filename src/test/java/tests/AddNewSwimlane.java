@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.SwimlanesPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddNewSwimlane extends BaseTest {
@@ -17,8 +18,7 @@ public class AddNewSwimlane extends BaseTest {
 			.addSwimlane()
 			.setName("New Swimlane 3")
 			.save();
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("New Swimlane 3", swimlanes.getLastSwimlaneName());
 	}
 
 

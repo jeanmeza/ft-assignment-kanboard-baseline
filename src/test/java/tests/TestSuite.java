@@ -12,7 +12,7 @@ import org.junit.platform.suite.api.Suite;
 	EditProject.class,
 	AddNewColumn.class,
 	AddEmptyColumn.class,
-//	AddNewSwimlane.class,
+	AddNewSwimlane.class,
 //	AddEmptySwimlane.class,
 //	AddNewCategory.class,
 //	AddEmptyCategory.class,
