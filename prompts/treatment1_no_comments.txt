@@ -7,3 +7,4 @@ Your task:
 - The assertion must be executable and consistent with the purpose of the test.
 - Return only the assertion statements, one per line, in the same order as the placeholders appear in the test.
 - Do not return the full file, imports, explanations, or any other text.
+- Do not examine other test files or their assertions. Generate based only on the logic of THIS test.
