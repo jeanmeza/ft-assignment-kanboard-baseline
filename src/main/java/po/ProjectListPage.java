@@ -8,7 +8,7 @@ public class ProjectListPage extends TopNavBar {
 	public ProjectListPage(WebDriver driver) {
 		super(driver);
 	}
-	
+
 	public boolean containsProject(String proj) {
 		try {
 			Thread.sleep(500);

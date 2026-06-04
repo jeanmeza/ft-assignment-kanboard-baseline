@@ -6,14 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TaskPage extends TaskSidebar {
-	
+
 	@FindBy(xpath = "//*[@id=\"task-summary\"]/div/div/div[1]/ul/li[1]/span")
 	protected WebElement status;
 
 	public TaskPage(WebDriver driver) {
 		super(driver);
 	}
-	
+
 	public TaskPage confirmCloseTask() {
 		driver.findElement(By.xpath("//*[@id=\"modal-confirm-button\"]")).click();
 		try {
@@ -23,7 +23,7 @@ public class TaskPage extends TaskSidebar {
 		}
 		return new TaskPage(driver);
 	}
-	
+
 	public String getStatus() {
 		return status.getText();
 	}

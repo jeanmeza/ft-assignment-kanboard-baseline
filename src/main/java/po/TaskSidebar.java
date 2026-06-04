@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TaskSidebar extends TopNavBar {
-	
+
 	@FindBy(linkText = "Close this task")
 	protected WebElement closeTask;
 
@@ -13,7 +13,7 @@ public class TaskSidebar extends TopNavBar {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public TaskPage closeTask() {
 		closeTask.click();
 		return new TaskPage(driver);

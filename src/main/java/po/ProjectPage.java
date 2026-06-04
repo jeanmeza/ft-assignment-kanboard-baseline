@@ -8,11 +8,11 @@ public class ProjectPage extends TopNavBar {
 	public ProjectPage(WebDriver driver) {
 		super(driver);
 	}
-	
+
 	public TaskPage goToTask(String task) {
 		driver.findElement(By.linkText(task)).click();
 		return new TaskPage(driver);
 	}
-	
+
 
 }
