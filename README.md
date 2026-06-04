@@ -40,6 +40,16 @@ Use the following command to start the application:
 docker run -d --name kanboard -p 8080:80 -t kanboard/kanboard:v1.2.15
 ```
 
+Alternatively, use the provided PowerShell script `kanboard.ps1`:
+
+```powershell
+# Restart Kanboard only
+.\kanboard.ps1
+
+# Restart Kanboard and run the test suite
+.\kanboard.ps1 -RunTests
+```
+
 You can also run Selenium Grid (optional but recommended) to execute tests with the remote browser setup:
 
 ```bash
