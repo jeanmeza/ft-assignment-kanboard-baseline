@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.ColumnsPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddNewColumn extends BaseTest {
@@ -19,8 +20,7 @@ public class AddNewColumn extends BaseTest {
 			.setColumnName("New Column 3")
 			.save();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("New Column 3", columns.getLastColumnName());
 	}
 
 

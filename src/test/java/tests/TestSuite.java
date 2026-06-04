@@ -10,7 +10,7 @@ import org.junit.platform.suite.api.Suite;
 	AddNewTask.class,
 	AddEmptyTask.class,
 	EditProject.class,
-//	AddNewColumn.class,
+	AddNewColumn.class,
 //	AddEmptyColumn.class,
 //	AddNewSwimlane.class,
 //	AddEmptySwimlane.class,
