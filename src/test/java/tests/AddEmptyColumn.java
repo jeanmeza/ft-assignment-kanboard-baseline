@@ -1,24 +1,23 @@
 package tests;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import po.ColumnsPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class AddEmptyColumn extends BaseTest {
-	
-	@Test()
+
+	@Test
 	public void addEmptyColumn() {
 		ColumnsPage columns = new LoginPage(driver)
-				.loginToKanboard("admin", password)
-				.firstProjectSummary()
-				.columns()
-				.addColumn()
-				.save();
-		
+			.loginToKanboard("admin", password)
+			.firstProjectSummary()
+			.columns()
+			.addColumn()
+			.save();
+
 		assertEquals("The title is required", columns.getErrorMessage());
-			  
+
 	}
 }

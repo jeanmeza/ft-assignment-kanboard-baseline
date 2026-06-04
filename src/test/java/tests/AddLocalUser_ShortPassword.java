@@ -1,29 +1,28 @@
 package tests;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.NewUserPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class AddLocalUser_ShortPassword extends BaseTest {
-	
-	@Test()
+
+	@Test
 	public void addShortPassword() {
 		NewUserPage user = new LoginPage(driver)
-				.loginToKanboard("admin", password)
-				.usersManagement()
-				.newUser()
-				.setUsername("TestUser2")
-				.setFullname("User2")
-				.setEmail("user2@gmail.com")
-				.setPassword("test")
-				.confirmPassword("test")
-				.saveError();
-		
+			.loginToKanboard("admin", password)
+			.usersManagement()
+			.newUser()
+			.setUsername("TestUser2")
+			.setFullname("User2")
+			.setEmail("user2@gmail.com")
+			.setPassword("test")
+			.confirmPassword("test")
+			.saveError();
+
 		assertEquals("The minimum length is 6 characters", user.getPswError());
-			  
+
 	}
-	
+
 }

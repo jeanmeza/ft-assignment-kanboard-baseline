@@ -1,24 +1,23 @@
 package tests;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import po.AddNewProjectPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class AddEmptyProject extends BaseTest {
-	
-	@Test()
+
+	@Test
 	public void addEmptyProject() {
 		AddNewProjectPage newProjPage = new LoginPage(driver)
-				.loginToKanboard("admin", password)
-				.newProject()
-				.addEmptyProject();
-			  
+			.loginToKanboard("admin", password)
+			.newProject()
+			.addEmptyProject();
+
 		assertEquals("The project name is required", newProjPage.getErrorMessage());
 
-			  
+
 	}
 }

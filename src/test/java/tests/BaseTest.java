@@ -1,28 +1,25 @@
 package tests;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
 
 public class BaseTest {
 
 	public static final String password = "admin";
-    public static final String app_url = "http://host.docker.internal:8080";
+	public static final String app_url = "http://192.168.1.50:8080";
 	public WebDriver driver;
 
-	@Before
+	@BeforeEach
 	public void setUp() {
-		setupRemoteWebdriver();
+		setupNativeBrowser();
 		driver.get(app_url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().window().maximize();
@@ -33,6 +30,7 @@ public class BaseTest {
 		chromeOptions.addArguments("--no-sandbox", "--headless=new", "--disable-gpu", "--screen-info={1920x1080}");
 		try {
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
+			driver.get(app_url);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,7 +44,7 @@ public class BaseTest {
 		driver = new ChromeDriver(options);
 	}
 
-	@After
+	@AfterEach
 	public void quit() {
 		driver.quit();
 	}

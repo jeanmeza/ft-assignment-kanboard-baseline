@@ -1,20 +1,15 @@
 package tests;
 
-import static org.junit.Assert.assertEquals;
-
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import po.BoardSettingsPage;
 import po.LoginPage;
 
-
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class ChangeBoardSettings extends BaseTest {
 
-		  
+
 	@Test
 	public void changeBoardSettings() {
 		BoardSettingsPage boardSettings = new LoginPage(driver)
@@ -25,10 +20,10 @@ public class ChangeBoardSettings extends BaseTest {
 			.save()
 			.appSettings()
 			.boardSettings();
-		
+
 		assertEquals("85", boardSettings.getPublicRefreshInterval());
-	
+
 	}
-		  
-		  
+
+
 }

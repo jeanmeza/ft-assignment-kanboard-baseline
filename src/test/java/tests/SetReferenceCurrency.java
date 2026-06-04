@@ -1,35 +1,28 @@
 package tests;
 
-import static org.junit.Assert.assertEquals;
-
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import po.CurrencyRatesPage;
 import po.LoginPage;
 
-
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class SetReferenceCurrency extends BaseTest {
 
 
-		  
-	@Test()
+	@Test
 	public void setReference() {
 		CurrencyRatesPage currencies = new LoginPage(driver)
-				.loginToKanboard("admin", password)
-				.goToSettings()
-				.currencyRates()
-				.changeReferenceCurrency()
-				.selectCurrency("EUR - Euro")
-				.save();
-		
+			.loginToKanboard("admin", password)
+			.goToSettings()
+			.currencyRates()
+			.changeReferenceCurrency()
+			.selectCurrency("EUR - Euro")
+			.save();
+
 		assertEquals("Reference currency: EUR", currencies.getReferenceCurrency());
-			  
+
 	}
-		  
-		  
-		  
+
+
 }

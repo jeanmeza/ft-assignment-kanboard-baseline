@@ -1,11 +1,10 @@
 package tests;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
 
-@RunWith(Suite.class)
-@SuiteClasses({
+@Suite
+@SelectClasses({
 	AddNewProject.class,
 	AddEmptyProject.class,
 	AddNewTask.class,
@@ -38,4 +37,5 @@ import org.junit.runners.Suite.SuiteClasses;
 	AddNewCurrencyRate.class,
 })
 
-public class TestSuite {}
+public class TestSuite {
+}
