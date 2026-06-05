@@ -21,7 +21,7 @@ import org.junit.platform.suite.api.Suite;
 	SetReferenceCurrency.class,
 	ChangeLanguage.class,
 	AddNewPrivateProject.class,
-//	SearchInProject.class,
+	SearchInProject.class,
 //	ChangeTask.class,
 //	AddLocalUser.class,
 //	AddRemoteUser.class,

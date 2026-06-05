@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.SearchResultsPage;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 public class SearchInProject extends BaseTest {
 
@@ -13,7 +15,7 @@ public class SearchInProject extends BaseTest {
 			.loginToKanboard("admin", password)
 			.search("status:open");
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertNotNull(results.getFirstTask());
 
 	}
 
