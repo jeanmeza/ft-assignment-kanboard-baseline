@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectSummaryPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddNewPrivateProject extends BaseTest {
@@ -16,10 +17,10 @@ public class AddNewPrivateProject extends BaseTest {
 			.newPersonalProject()
 			.addNewProject("Test private 2");
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("Test private 2", project.getTitle());
+		assertEquals("Active", project.getStatus());
+		assertEquals("Private", project.getAccessLevel());
+		assertEquals("No", project.getPublicAccess());
 
 	}
 

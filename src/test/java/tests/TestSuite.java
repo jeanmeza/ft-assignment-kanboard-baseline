@@ -20,7 +20,7 @@ import org.junit.platform.suite.api.Suite;
 	AuthorizedUsers.class,
 	SetReferenceCurrency.class,
 	ChangeLanguage.class,
-//	AddNewPrivateProject.class,
+	AddNewPrivateProject.class,
 //	SearchInProject.class,
 //	ChangeTask.class,
 //	AddLocalUser.class,
