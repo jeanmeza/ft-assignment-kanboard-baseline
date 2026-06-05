@@ -14,7 +14,7 @@ import org.junit.platform.suite.api.Suite;
 	AddEmptyColumn.class,
 	AddNewSwimlane.class,
 	AddEmptySwimlane.class,
-//	AddNewCategory.class,
+	AddNewCategory.class,
 //	AddEmptyCategory.class,
 //	EditProfile.class,
 //	AuthorizedUsers.class,
