@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.SwimlanesPage;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class AddEmptySwimlane extends BaseTest {
@@ -18,7 +19,7 @@ public class AddEmptySwimlane extends BaseTest {
 			.addSwimlane()
 			.save();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertTrue(swimlanes.getLastSwimlaneName().isEmpty());
 
 	}
 

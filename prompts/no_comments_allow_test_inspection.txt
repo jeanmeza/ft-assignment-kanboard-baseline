@@ -1,0 +1,10 @@
+You are given a Selenium WebDriver JUnit 5 test in Java. The original assertions have been removed and replaced with the following placeholder comment:
+
+// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+
+Your task:
+- For each placeholder comment, generate exactly one JUnit 5 assertion that correctly verifies the test's intended behavior.
+- The assertion must be executable and consistent with the purpose of the test.
+- Return only the assertion statements, one per line, in the same order as the placeholders appear in the test.
+- Do not return the full file, imports, explanations, or any other text.
+- You are allowed to inspect other tests.

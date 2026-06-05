@@ -13,7 +13,7 @@ import org.junit.platform.suite.api.Suite;
 	AddNewColumn.class,
 	AddEmptyColumn.class,
 	AddNewSwimlane.class,
-//	AddEmptySwimlane.class,
+	AddEmptySwimlane.class,
 //	AddNewCategory.class,
 //	AddEmptyCategory.class,
 //	EditProfile.class,
