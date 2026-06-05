@@ -19,7 +19,7 @@ import org.junit.platform.suite.api.Suite;
 	EditProfile.class,
 	AuthorizedUsers.class,
 	SetReferenceCurrency.class,
-//	ChangeLanguage.class,
+	ChangeLanguage.class,
 //	AddNewPrivateProject.class,
 //	SearchInProject.class,
 //	ChangeTask.class,
