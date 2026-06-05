@@ -16,7 +16,7 @@ import org.junit.platform.suite.api.Suite;
 	AddEmptySwimlane.class,
 	AddNewCategory.class,
 	AddEmptyCategory.class,
-//	EditProfile.class,
+	EditProfile.class,
 //	AuthorizedUsers.class,
 //	SetReferenceCurrency.class,
 //	ChangeLanguage.class,
