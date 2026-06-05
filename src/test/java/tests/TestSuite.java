@@ -17,7 +17,7 @@ import org.junit.platform.suite.api.Suite;
 	AddNewCategory.class,
 	AddEmptyCategory.class,
 	EditProfile.class,
-//	AuthorizedUsers.class,
+	AuthorizedUsers.class,
 //	SetReferenceCurrency.class,
 //	ChangeLanguage.class,
 //	AddNewPrivateProject.class,
