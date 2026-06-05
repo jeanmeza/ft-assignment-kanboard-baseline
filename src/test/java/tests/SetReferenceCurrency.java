@@ -1,9 +1,9 @@
 package tests;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import po.CurrencyRatesPage;
 import po.LoginPage;
-
 
 
 public class SetReferenceCurrency extends BaseTest {
@@ -19,8 +19,7 @@ public class SetReferenceCurrency extends BaseTest {
 			.selectCurrency("EUR - Euro")
 			.save();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		Assertions.assertEquals("EUR - Euro", currencies.getReferenceCurrency());
 	}
 
 

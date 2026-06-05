@@ -18,7 +18,7 @@ import org.junit.platform.suite.api.Suite;
 	AddEmptyCategory.class,
 	EditProfile.class,
 	AuthorizedUsers.class,
-//	SetReferenceCurrency.class,
+	SetReferenceCurrency.class,
 //	ChangeLanguage.class,
 //	AddNewPrivateProject.class,
 //	SearchInProject.class,
