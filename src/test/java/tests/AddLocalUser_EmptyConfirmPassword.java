@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.NewUserPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 
 public class AddLocalUser_EmptyConfirmPassword extends BaseTest {
 
@@ -19,7 +22,7 @@ public class AddLocalUser_EmptyConfirmPassword extends BaseTest {
 			.setPassword("test123")
 			.saveError();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertFalse(user.getPswConfirmError().isEmpty());
 
 	}
 
