@@ -24,7 +24,7 @@ import org.junit.platform.suite.api.Suite;
 	SearchInProject.class,
 	ChangeTask.class,
 	AddLocalUser.class,
-//	AddRemoteUser.class,
+	AddRemoteUser.class,
 //	AddLocalUser_DifferentPasswords.class,
 //	AddLocalUser_EmptyConfirmPassword.class,
 //	AddLocalUser_EmptyPassword.class,
