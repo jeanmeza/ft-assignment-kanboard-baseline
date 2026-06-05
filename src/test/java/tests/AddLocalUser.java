@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.UserSummaryPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class AddLocalUser extends BaseTest {
@@ -22,9 +23,9 @@ public class AddLocalUser extends BaseTest {
 			.confirmPassword("test123")
 			.save();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("TestUser", user.getUsername());
+		assertEquals("User1", user.getFullname());
+		assertEquals("user@gmail.com", user.getEmail());
 
 	}
 
