@@ -22,7 +22,7 @@ import org.junit.platform.suite.api.Suite;
 	ChangeLanguage.class,
 	AddNewPrivateProject.class,
 	SearchInProject.class,
-//	ChangeTask.class,
+	ChangeTask.class,
 //	AddLocalUser.class,
 //	AddRemoteUser.class,
 //	AddLocalUser_DifferentPasswords.class,
