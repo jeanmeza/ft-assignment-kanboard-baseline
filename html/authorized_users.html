@@ -8,13 +8,6 @@
   <meta content="no-referrer" name="referrer">
 
 
-  
-  
-  
-  
-  
-  
-
   <link href="/assets/img/favicon.png" rel="icon" type="image/png">
   <link href="/assets/img/touch-icon-iphone.png" rel="apple-touch-icon">
   <link href="/assets/img/touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
@@ -52,10 +45,12 @@
       <ul>
         <li>
           <a class="js-modal-medium" href="/project/create" title=""><i aria-hidden="true"
-                                                                        class="fa fa-plus fa-fw js-modal-medium"></i>New project</a></li>
+                                                                        class="fa fa-plus fa-fw js-modal-medium"></i>New
+            project</a></li>
         <li>
           <a class="js-modal-medium" href="/project/create/private" title=""><i aria-hidden="true"
-                                                                                class="fa fa-lock fa-fw js-modal-medium"></i>New personal
+                                                                                class="fa fa-lock fa-fw js-modal-medium"></i>New
+            personal
             project</a></li>
       </ul>
     </div>
@@ -126,7 +121,8 @@
 
             <li>
               <a class="js-modal-medium" href="/export/tasks/1" title=""><i aria-hidden="true"
-                                                                            class="fa fa-upload fa-fw js-modal-medium"></i>Exports</a></li>
+                                                                            class="fa fa-upload fa-fw js-modal-medium"></i>Exports</a>
+            </li>
 
             <li>
               <a class="js-modal-medium" href="/project/1/import" title=""><i
@@ -148,31 +144,35 @@
 
           <li>
             <a class="view-overview"
-               href="/?controller=ProjectOverviewController&amp;action=show&amp;project_id=1&amp;search=status%3Aopen" title="Keyboard shortcut: &quot;v o&quot;"><i aria-hidden="true"
-                                                                                   class="fa fa-fw fa-eye"></i>Overview</a>
+               href="/?controller=ProjectOverviewController&amp;action=show&amp;project_id=1&amp;search=status%3Aopen"
+               title="Keyboard shortcut: &quot;v o&quot;"><i aria-hidden="true"
+                                                             class="fa fa-fw fa-eye"></i>Overview</a>
           </li>
 
 
           <li>
             <a class="view-board"
-               href="/?controller=BoardViewController&amp;action=show&amp;project_id=1&amp;search=status%3Aopen" title="Keyboard shortcut: &quot;v b&quot;"><i aria-hidden="true"
-                                                                                class="fa fa-fw fa-th"></i>Board</a></li>
+               href="/?controller=BoardViewController&amp;action=show&amp;project_id=1&amp;search=status%3Aopen"
+               title="Keyboard shortcut: &quot;v b&quot;"><i aria-hidden="true"
+                                                             class="fa fa-fw fa-th"></i>Board</a></li>
 
 
           <li>
             <a class="view-listing"
-               href="/?controller=TaskListController&amp;action=show&amp;project_id=1&amp;search=status%3Aopen" title="Keyboard shortcut: &quot;v l&quot;"><i aria-hidden="true"
-                                                                                  class="fa fa-fw fa-list"></i>List</a></li>
+               href="/?controller=TaskListController&amp;action=show&amp;project_id=1&amp;search=status%3Aopen"
+               title="Keyboard shortcut: &quot;v l&quot;"><i aria-hidden="true"
+                                                             class="fa fa-fw fa-list"></i>List</a></li>
 
         </ul>
       </div>
       <div class="filter-box-component">
         <div class="filter-box">
           <form action="/" class="search" method="get">
-            <input id="form-controller" name="controller" type="hidden" value="TaskListController"> <input id="form-action"
-                                                                                                           name="action"
-                                                                                                           type="hidden"
-                                                                                                           value="show">
+            <input id="form-controller" name="controller" type="hidden" value="TaskListController"> <input
+            id="form-action"
+            name="action"
+            type="hidden"
+            value="show">
             <input id="form-plugin" name="plugin" type="hidden" value=""> <input id="form-project_id" name="project_id"
                                                                                  type="hidden" value="1">
             <div class="input-addon">
@@ -276,10 +276,12 @@
             <a class="" href="/project/1/duplicate" title="">Duplicate</a></li>
           <li>
             <a class="js-modal-confirm"
-               href="/?controller=ProjectStatusController&amp;action=confirmDisable&amp;project_id=1" title="">Close this project</a></li>
+               href="/?controller=ProjectStatusController&amp;action=confirmDisable&amp;project_id=1" title="">Close
+              this project</a></li>
           <li>
             <a class="js-modal-confirm"
-               href="/?controller=ProjectStatusController&amp;action=confirmRemove&amp;project_id=1" title="">Remove</a></li>
+               href="/?controller=ProjectStatusController&amp;action=confirmRemove&amp;project_id=1" title="">Remove</a>
+          </li>
 
         </ul>
       </div>
@@ -318,14 +320,17 @@
           <form action="/?controller=ProjectPermissionController&amp;action=addUser&amp;project_id=1" autocomplete="off"
                 class="form-inline" method="post">
             <input name="csrf_token" type="hidden" value="e40075f8684450fb0791c7aa15a1943d3092cb9df9caf3b1104acfeee09e">
-            <input id="form-project_id" name="project_id" type="hidden" value="1"> <input id="form-user_id" name="user_id"
+            <input id="form-project_id" name="project_id" type="hidden" value="1"> <input id="form-user_id"
+                                                                                          name="user_id"
                                                                                           type="hidden"> <input
             id="form-username" name="username" type="hidden"> <input id="form-external_id" name="external_id"
                                                                      type="hidden"> <input id="form-external_id_column"
-                                                                                                   name="external_id_column"
-                                                                                                   type="hidden">
-            <label for="form-name">Name</label> <input autocomplete="off" class="autocomplete ui-autocomplete-input" data-dst-extra-fields="external_id,external_id_column,username"
-                                                       data-dst-field="user_id" data-search-url="/?controller=UserAjaxController&amp;action=autocomplete"
+                                                                                           name="external_id_column"
+                                                                                           type="hidden">
+            <label for="form-name">Name</label> <input autocomplete="off" class="autocomplete ui-autocomplete-input"
+                                                       data-dst-extra-fields="external_id,external_id_column,username"
+                                                       data-dst-field="user_id"
+                                                       data-search-url="/?controller=UserAjaxController&amp;action=autocomplete"
                                                        id="form-name" name="name"
                                                        placeholder="Enter user name..."
                                                        required=""
@@ -347,14 +352,19 @@
         <div class="alert">No group has been allowed.</div>
 
         <div class="panel">
-          <form action="/?controller=ProjectPermissionController&amp;action=addGroup&amp;project_id=1" autocomplete="off"
+          <form action="/?controller=ProjectPermissionController&amp;action=addGroup&amp;project_id=1"
+                autocomplete="off"
                 class="form-inline" method="post">
             <input name="csrf_token" type="hidden" value="217a9ddb9ce86d84f07a9d271d6ec47beefaeb6dec42bb7b899cdac97ce7">
-            <input id="form-project_id" name="project_id" type="hidden" value="1"> <input id="form-group_id" name="group_id"
+            <input id="form-project_id" name="project_id" type="hidden" value="1"> <input id="form-group_id"
+                                                                                          name="group_id"
                                                                                           type="hidden"> <input
             id="form-external_id" name="external_id" type="hidden">
-            <label for="form-name">Group Name</label> <input autocomplete="off" class="autocomplete ui-autocomplete-input" data-dst-extra-fields="external_id"
-                                                             data-dst-field="group_id" data-search-url="/?controller=GroupAjaxController&amp;action=autocomplete"
+            <label for="form-name">Group Name</label> <input autocomplete="off"
+                                                             class="autocomplete ui-autocomplete-input"
+                                                             data-dst-extra-fields="external_id"
+                                                             data-dst-field="group_id"
+                                                             data-search-url="/?controller=GroupAjaxController&amp;action=autocomplete"
                                                              id="form-name"
                                                              name="name" placeholder="Enter group name..."
                                                              required=""
