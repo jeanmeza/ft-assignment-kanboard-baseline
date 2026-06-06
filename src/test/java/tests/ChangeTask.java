@@ -17,7 +17,8 @@ public class ChangeTask extends BaseTest {
 			.closeTask()
 			.confirmCloseTask();
 
-		assertEquals("closed", task.getStatus());
+		// Verify that the task status is "closed" after closing it.
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

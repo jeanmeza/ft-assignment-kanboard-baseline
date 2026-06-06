@@ -20,7 +20,8 @@ public class AddNewColumn extends BaseTest {
 			.setColumnName("New Column 3")
 			.save();
 
-		assertTrue(columns.getLastColumnName().contains("New Column 3"));
+		// Verify that the last column is the newly added "New Column 3".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

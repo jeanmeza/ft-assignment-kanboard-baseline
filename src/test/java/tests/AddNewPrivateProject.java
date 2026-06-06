@@ -18,10 +18,14 @@ public class AddNewPrivateProject extends BaseTest {
 			.newPersonalProject()
 			.addNewProject("Test private 2");
 
-		assertEquals("Test private 2", project.getTitle());
-		assertEquals("This project is open", project.getStatus());
-		assertTrue(project.getAccessLevel().contains("This project is personal"));
-		assertEquals("Public access disabled", project.getPublicAccess());
+		// Verify that the new project's title is "Test private 2".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that the new project's status is "This project is open".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that the project's access level indicates "This project is personal".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that public access is "Public access disabled".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

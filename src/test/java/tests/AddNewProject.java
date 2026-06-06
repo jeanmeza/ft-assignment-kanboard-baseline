@@ -17,8 +17,10 @@ public class AddNewProject extends BaseTest {
 			.newProject()
 			.addNewProject("Test 2");
 
-		assertEquals("Test 2", project.getTitle());
-		assertEquals("This project is open", project.getStatus());
+		// Verify that the new project's title is "Test 2".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that the new project's status is "This project is open".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 
 	}

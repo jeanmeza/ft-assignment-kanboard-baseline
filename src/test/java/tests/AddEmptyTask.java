@@ -18,7 +18,8 @@ public class AddEmptyTask extends BaseTest {
 			.newTask()
 			.setNewTaskName("")
 			.saveNewTask();
-		assertEquals("The title is required", project.getErrorMessage());
+		// Verify that an error message "The title is required" is shown when saving a task with an empty title.
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

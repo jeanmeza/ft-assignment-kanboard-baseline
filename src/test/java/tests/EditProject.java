@@ -20,7 +20,8 @@ public class EditProject extends BaseTest {
 			.save()
 			.summary();
 
-		assertEquals("This is the new description", project.getDescription());
+		// Verify that the project description was updated to "This is the new description".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 
 	}

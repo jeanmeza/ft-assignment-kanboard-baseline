@@ -18,7 +18,8 @@ public class AddNewSwimlane extends BaseTest {
 			.addSwimlane()
 			.setName("New Swimlane 3")
 			.save();
-		assertTrue(swimlanes.getLastSwimlaneName().contains("New Swimlane 3"));
+		// Verify that the last swimlane is the newly added "New Swimlane 3".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

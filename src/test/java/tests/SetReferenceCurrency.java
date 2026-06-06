@@ -20,7 +20,8 @@ public class SetReferenceCurrency extends BaseTest {
 			.selectCurrency("EUR - Euro")
 			.save();
 
-		assertEquals("Reference currency: EUR", currencies.getReferenceCurrency());
+		// Verify that the reference currency is set to "Reference currency: EUR".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 
