@@ -30,7 +30,7 @@ public class AddNewPrivateProject extends BaseTest {
 		// Verify that the project's access level indicates "This project is personal".
 		assertEquals("This project is personal", project.getAccessLevel());
 		// Verify that public access is "Public access disabled".
-		assertEquals("Public access disabled", project.getPublicAccess());
+		assertEquals("Public access disabled", project.getPublicAccess()); 
 
 	}
 
