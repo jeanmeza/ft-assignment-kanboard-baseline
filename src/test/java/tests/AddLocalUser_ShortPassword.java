@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.NewUserPage;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 
 public class AddLocalUser_ShortPassword extends BaseTest {
 
@@ -20,8 +22,7 @@ public class AddLocalUser_ShortPassword extends BaseTest {
 			.confirmPassword("test")
 			.saveError();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertFalse(user.getPswError().isEmpty());
 	}
 
 }

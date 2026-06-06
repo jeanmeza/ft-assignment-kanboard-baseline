@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import po.BoardSettingsPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class ChangeBoardSettings extends BaseTest {
@@ -20,8 +21,7 @@ public class ChangeBoardSettings extends BaseTest {
 			.appSettings()
 			.boardSettings();
 
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("85", boardSettings.getPublicRefreshInterval());
 	}
 
 

@@ -29,12 +29,12 @@ import org.junit.platform.suite.api.Suite;
 	AddLocalUser_EmptyConfirmPassword.class,
 	AddLocalUser_EmptyPassword.class,
 	AddLocalUser_EmptyUsername.class,
-//	AddLocalUser_ShortPassword.class,
-//	RemoveUser.class,
-//	ClosedTasks.class,
-//	RemoveProject.class,
-//	ChangeBoardSettings.class,
-//	AddNewCurrencyRate.class,
+	AddLocalUser_ShortPassword.class,
+	RemoveUser.class,
+	ClosedTasks.class,
+	RemoveProject.class,
+	ChangeBoardSettings.class,
+	AddNewCurrencyRate.class,
 })
 
 public class TestSuite {
