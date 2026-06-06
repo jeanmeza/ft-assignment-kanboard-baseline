@@ -6,8 +6,8 @@ You are given a Selenium WebDriver JUnit 5 test in Java. The original assertions
 Your task:
 - For each placeholder comment, generate exactly one JUnit 5 assertion that satisfies the natural-language description on the line directly above it.
 - Use the natural-language comment as the primary guide for what to assert; the assertion must match the described check.
+- Examine the Page Object classes used by the test to find the correct public getter methods and their return types. Prefer asserting on these page object getters (as the test's action chain already does) rather than raw driver.findElement/getPageSource locators. Use only methods that actually exist.
 - The assertion must be executable and consistent with the purpose of the test.
-- Return only the assertion statements, one per line, in the same order as the placeholders appear in the test.
+- Return exactly as many assertions as there are placeholders, one per line, in the same order the placeholders appear in the test. Do not merge, skip, or add extras.
 - Do not return the full file, imports, explanations, or any other text.
-- You may examine the Page Object classes to understand what getters return and their types.
 - Do not copy other tests' patterns; generate from this test's logic and its natural-language comment.
