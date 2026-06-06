@@ -9,6 +9,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration;
 
 public class BaseTest {
@@ -53,6 +55,18 @@ public class BaseTest {
 		options.addArguments("--disable-search-engine-choice-screen", "--disable-gpu", "--headless=new", "--screen-info={1920x1080}");
 		options.setBrowserVersion("127");
 		driver = new ChromeDriver(options);
+	}
+
+	/**
+	 * Saves the current page source to a file with the specified name.
+	 */
+	protected void saveWebPageSource(String filename) {
+		try {
+			var pageSource = driver.getPageSource();
+			Files.write(Paths.get("html/" + filename), pageSource.getBytes());
+		} catch (java.io.IOException e) {
+			System.err.println("Error saving page source: " + e.getMessage());
+		}
 	}
 
 	@AfterEach
