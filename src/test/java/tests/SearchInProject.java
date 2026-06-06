@@ -15,7 +15,7 @@ public class SearchInProject extends BaseTest {
 			.search("status:open");
 
 		// Verify that the first result of the open-tasks search is "task 3".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("task 3", results.getFirstTask());
 
 	}
 

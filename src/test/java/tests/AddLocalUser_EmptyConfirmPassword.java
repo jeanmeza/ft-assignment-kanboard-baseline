@@ -21,7 +21,7 @@ public class AddLocalUser_EmptyConfirmPassword extends BaseTest {
 			.saveError();
 
 		// Verify that a confirmation error "The confirmation is required" is shown when the confirmation password is empty.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("The confirmation is required", user.getPswConfirmError());
 
 	}
 

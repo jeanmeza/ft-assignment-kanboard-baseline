@@ -20,7 +20,7 @@ public class AddLocalUser_EmptyPassword extends BaseTest {
 			.saveError();
 
 		// Verify that a password error "The password is required" is shown when the password field is empty.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("The password is required", user.getPswError());
 
 	}
 

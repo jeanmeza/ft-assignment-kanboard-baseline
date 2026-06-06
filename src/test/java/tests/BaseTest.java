@@ -13,8 +13,8 @@ import java.time.Duration;
 
 public class BaseTest {
 
-	// Change this to your local IP address or use "localhost" if running tests on the same machine as the application
-	public static final String app_url = "http://192.168.1.50:8080";
+	// When running tests with Selenium Grid in Docker, use host.docker.internal to access the host machine
+	public static final String app_url = "http://host.docker.internal:8080";
 	public static final String password = "admin";
 	public WebDriver driver;
 

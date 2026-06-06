@@ -19,7 +19,7 @@ public class AddEmptyCategory extends BaseTest {
 			.save();
 
 		// Verify that an error message "The name is required" is shown when adding a category with an empty name.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("The name is required", categories.getErrorMessage());
 
 
 	}

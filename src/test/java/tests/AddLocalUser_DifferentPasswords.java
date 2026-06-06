@@ -22,7 +22,7 @@ public class AddLocalUser_DifferentPasswords extends BaseTest {
 			.saveError();
 
 		// Verify that a password error "Passwords don't match" is shown when the password and confirmation differ.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("Passwords don't match", user.getPswConfirmError());
 
 	}
 

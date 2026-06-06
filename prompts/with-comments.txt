@@ -9,5 +9,6 @@ Your task:
 - The assertion must be executable and consistent with the purpose of the test.
 - Return only the assertion statements, one per line, in the same order as the placeholders appear in the test.
 - Do not return the full file, imports, explanations, or any other text.
+- Do not run a test to verify the assertions 
 - You may examine the Page Object classes to understand what getters return and their types.
 - Do not copy other tests' patterns; generate from this test's logic and its natural-language comment.

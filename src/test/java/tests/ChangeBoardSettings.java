@@ -22,7 +22,7 @@ public class ChangeBoardSettings extends BaseTest {
 			.boardSettings();
 
 		// Verify that the public board refresh interval was saved as "85".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("85", boardSettings.getPublicRefreshInterval());
 
 	}
 

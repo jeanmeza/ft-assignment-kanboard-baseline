@@ -18,7 +18,7 @@ public class RemoveUser extends BaseTest {
 			.removeFirstUser();
 
 		// Verify that the user "remote1" no longer appears in the users list after removal.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertFalse(users.containsUser("remote1"));
 
 	}
 

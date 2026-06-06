@@ -23,13 +23,13 @@ public class AddRemoteUser extends BaseTest {
 			.save();
 
 		// Verify that the created remote user's username is "TestRemote".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("TestRemote", user.getUsername());
 		// Verify that the created remote user's full name is "remote1".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("remote1", user.getFullname());
 		// Verify that the created remote user's email is "remote@gmail.com".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("remote@gmail.com", user.getEmail());
 		// Verify that the created user's account type is "Remote".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("Remote", user.getAccountType());
 	}
 
 

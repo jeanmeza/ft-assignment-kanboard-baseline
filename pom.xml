@@ -12,7 +12,7 @@
     <junit.jupiter.version>5.14.4</junit.jupiter.version>
     <junit.platform.version>1.14.4</junit.platform.version>
     <maven.surefire.version>3.5.4</maven.surefire.version>
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
   <dependencies>

@@ -19,7 +19,7 @@ public class AddNewTask extends BaseTest {
 			.setNewTaskName("task 3")
 			.saveNewTask();
 		// Verify that the first task in the project is the newly created "task 3".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("task 3", project.getFirstTaskName());
 
 	}
 

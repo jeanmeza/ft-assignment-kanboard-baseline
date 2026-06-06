@@ -20,7 +20,7 @@ public class AddNewCategory extends BaseTest {
 			.save();
 
 		// Verify that the categories list contains the newly added category "New Category 2".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertTrue(categories.getCategoryName().equals("New Category 2"));
 
 	}
 
