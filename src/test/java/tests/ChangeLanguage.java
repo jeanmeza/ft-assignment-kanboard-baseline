@@ -18,11 +18,15 @@ public class ChangeLanguage extends BaseTest {
 			.selectLanguage("Italiano")
 			.save();
 
-		assertEquals("Italiano", appSettings.getSelectedLanguage());
-		assertEquals("Lingua", appSettings.getLanguageLabel());
+		// Verify that the selected language is "Italiano".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that the language label reads "Lingua" (Italian for "Language").
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 		appSettings.selectLanguage("English (US)").save();
-		assertEquals("English (US)", appSettings.getSelectedLanguage());
-		assertEquals("Language", appSettings.getLanguageLabel());
+		// Verify that the selected language is "English (US)" after switching back.
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that the language label reads "Language" again.
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

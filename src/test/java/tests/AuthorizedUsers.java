@@ -17,7 +17,8 @@ public class AuthorizedUsers extends BaseTest {
 			.firstProjectSummary()
 			.permissions();
 
-		assertEquals("admin", permissions.getFirstAllowedUser());
+		// Verify that the first allowed user on the permissions page is "admin".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

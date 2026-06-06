@@ -21,7 +21,8 @@ public class AddLocalUser_ShortPassword extends BaseTest {
 			.confirmPassword("test")
 			.saveError();
 
-		assertEquals("The minimum length is 6 characters", user.getPswError());
+		// Verify that a password error "The minimum length is 6 characters" is shown when the password is too short.
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

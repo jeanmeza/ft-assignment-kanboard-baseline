@@ -20,8 +20,10 @@ public class AddNewCurrencyRate extends BaseTest {
 			.setRate("1.2")
 			.save();
 
-		assertEquals("USD", currencies.getRateCurrency());
-		assertEquals("1.20", currencies.getRateValue());
+		// Verify that the added currency rate's currency is "USD".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		// Verify that the added currency rate's value is "1.20".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 	}
 
 }

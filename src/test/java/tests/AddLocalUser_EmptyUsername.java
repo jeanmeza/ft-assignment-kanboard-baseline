@@ -20,7 +20,8 @@ public class AddLocalUser_EmptyUsername extends BaseTest {
 			.confirmPassword("test123")
 			.saveError();
 
-		assertEquals("The username is required", user.getNameError());
+		// Verify that a username error "The username is required" is shown when the username field is empty.
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 

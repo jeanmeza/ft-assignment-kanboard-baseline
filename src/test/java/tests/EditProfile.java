@@ -21,7 +21,8 @@ public class EditProfile extends BaseTest {
 			.setEmail("admin@kanboard.com")
 			.save();
 
-		assertEquals("admin@kanboard.com", user.getEmail());
+		// Verify that the admin user's email was updated to "admin@kanboard.com".
+		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
 
 	}
 
