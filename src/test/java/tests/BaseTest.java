@@ -63,7 +63,11 @@ public class BaseTest {
 	protected void saveWebPageSource(String filename) {
 		try {
 			var pageSource = driver.getPageSource();
-			Files.write(Paths.get("html/" + filename), pageSource.getBytes());
+			if (pageSource == null) {
+				System.err.println("Page source is null, cannot save to file. " + filename);
+				return;
+			}
+			Files.writeString(Paths.get("html/" + filename), pageSource);
 		} catch (java.io.IOException e) {
 			System.err.println("Error saving page source: " + e.getMessage());
 		}
