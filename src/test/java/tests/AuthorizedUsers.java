@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.PermissionsPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class AuthorizedUsers extends BaseTest {
 
@@ -16,8 +18,7 @@ public class AuthorizedUsers extends BaseTest {
 			.permissions();
 
 		// Verify that the first allowed user on the permissions page is "admin".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("admin", permissions.getFirstAllowedUser());
 	}
 
 

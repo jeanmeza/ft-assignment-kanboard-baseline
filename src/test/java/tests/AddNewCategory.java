@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.CategoriesPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class AddNewCategory extends BaseTest {
 
@@ -18,8 +20,7 @@ public class AddNewCategory extends BaseTest {
 			.save();
 
 		// Verify that the categories list contains the newly added category "New Category 2".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("New Category 2", categories.getCategoryName());
 	}
 
 
