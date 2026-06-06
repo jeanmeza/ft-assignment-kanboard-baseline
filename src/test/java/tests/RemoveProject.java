@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectListPage;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 
 public class RemoveProject extends BaseTest {
 
@@ -16,8 +18,7 @@ public class RemoveProject extends BaseTest {
 			.remove();
 
 		// Verify that the project "Test 2" no longer appears in the projects list after removal.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertFalse(projects.containsProject("Test 2"));
 	}
 
 }

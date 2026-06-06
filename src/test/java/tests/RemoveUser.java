@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.UsersManagementPage;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 
 public class RemoveUser extends BaseTest {
 
@@ -16,8 +18,7 @@ public class RemoveUser extends BaseTest {
 			.removeFirstUser();
 
 		// Verify that the user "remote1" no longer appears in the users list after removal.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertFalse(users.containsUser("remote1"));
 	}
 
 

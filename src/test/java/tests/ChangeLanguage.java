@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.ApplicationSettingsPage;
 import po.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class ChangeLanguage extends BaseTest {
 
@@ -17,15 +19,14 @@ public class ChangeLanguage extends BaseTest {
 			.save();
 
 		// Verify that the selected language is "Italiano".
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("Italiano", appSettings.getSelectedLanguage());
 		// Verify that the language label reads "Lingua" (Italian for "Language").
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("Lingua", appSettings.getLanguageLabel());
 		appSettings.selectLanguage("English (US)").save();
 		// Verify that the selected language is "English (US)" after switching back.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
+		assertEquals("English (US)", appSettings.getSelectedLanguage());
 		// Verify that the language label reads "Language" again.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("Language", appSettings.getLanguageLabel());
 	}
 
 

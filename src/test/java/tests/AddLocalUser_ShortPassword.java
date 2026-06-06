@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.NewUserPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class AddLocalUser_ShortPassword extends BaseTest {
 
 	@Test
@@ -20,8 +22,7 @@ public class AddLocalUser_ShortPassword extends BaseTest {
 			.saveError();
 
 		// Verify that a password error "The minimum length is 6 characters" is shown when the password is too short.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("The minimum length is 6 characters", user.getPswError());
 	}
 
 }

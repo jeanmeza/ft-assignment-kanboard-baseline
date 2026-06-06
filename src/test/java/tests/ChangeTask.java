@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.TaskPage;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class ChangeTask extends BaseTest {
 
 	@Test
@@ -16,8 +18,7 @@ public class ChangeTask extends BaseTest {
 			.confirmCloseTask();
 
 		// Verify that the task status is "closed" after closing it.
-		// Insert here a JUnit 5 assertion that correctly reflects the purpose of the test
-
+		assertEquals("closed", task.getStatus());
 	}
 
 
