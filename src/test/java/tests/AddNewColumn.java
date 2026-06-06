@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.ColumnsPage;
 import po.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 public class AddNewColumn extends BaseTest {
 

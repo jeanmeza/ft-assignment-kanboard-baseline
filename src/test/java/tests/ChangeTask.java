@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.TaskPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class ChangeTask extends BaseTest {
 
 	@Test

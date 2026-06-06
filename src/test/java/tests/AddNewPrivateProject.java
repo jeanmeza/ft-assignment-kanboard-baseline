@@ -4,9 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectSummaryPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 public class AddNewPrivateProject extends BaseTest {
 

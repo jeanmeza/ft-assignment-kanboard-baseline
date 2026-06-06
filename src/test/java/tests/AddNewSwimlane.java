@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.SwimlanesPage;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 public class AddNewSwimlane extends BaseTest {
 

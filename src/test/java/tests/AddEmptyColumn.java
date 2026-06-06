@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.ColumnsPage;
 import po.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class AddEmptyColumn extends BaseTest {
 
 	@Test

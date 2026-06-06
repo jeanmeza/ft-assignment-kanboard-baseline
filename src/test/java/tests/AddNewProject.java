@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectSummaryPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 public class AddNewProject extends BaseTest {
 

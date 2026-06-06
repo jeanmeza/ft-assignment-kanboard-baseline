@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.ProjectListPage;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-
 
 public class RemoveProject extends BaseTest {
 

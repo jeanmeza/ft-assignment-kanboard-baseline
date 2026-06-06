@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.CurrencyRatesPage;
 import po.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 public class SetReferenceCurrency extends BaseTest {
 

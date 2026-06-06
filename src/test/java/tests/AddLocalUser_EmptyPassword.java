@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.NewUserPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class AddLocalUser_EmptyPassword extends BaseTest {
 
 	@Test

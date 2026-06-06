@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Test;
 import po.LoginPage;
 import po.UserSummaryPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 public class EditProfile extends BaseTest {
 
